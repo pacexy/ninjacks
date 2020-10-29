@@ -31,7 +31,7 @@ interface Configuration {
 
 ### Environment
 
-`Enviroment` extends the raw `nunjucks.Environment` with a `renderFile` method who can
+`Environment` extends the raw `nunjucks.Environment` with a `renderFile` method who can
 render, format (with prettier), and write.
 
 ```typescript
@@ -64,7 +64,7 @@ const env = ninjacks.configure({
   // This will override the default prettierrc.
   prettierrc: { parser: 'html' },
   // If you don't want this, import the default prettierrc and use it.
-  prettierrc: { ...defaultPrettierrc, parser: 'html' }
+  prettierrc: { ...defaultPrettierrc, parser: 'html' },
   // Also, you can disable prettier.
   prettierrc: null
 })
